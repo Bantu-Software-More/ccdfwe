@@ -3,8 +3,8 @@ import Link from "next/link";
 import PageHero from "@/components/ui/PageHero";
 
 export const metadata: Metadata = {
-  title: "Members Area",
-  description: "Member access for CCDFWE community members.",
+  title: "Members Area – CCDFWE Community Portal",
+  description: "Member access area for CCDFWE Congolese community members in Dallas-Fort Worth.",
 };
 
 export default function MembersPage() {

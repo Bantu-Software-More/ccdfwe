@@ -6,8 +6,8 @@ import SectionTitle from "@/components/ui/SectionTitle";
 import CTASection from "@/components/ui/CTASection";
 
 export const metadata: Metadata = {
-  title: "Donate",
-  description: "Support CCDFWE's mission by making a donation to help fund our community programs.",
+  title: "Donate – Support the Congolese Community in Dallas-Fort Worth",
+  description: "Support CCDFWE's mission by donating to help fund Congolese cultural programs, women's empowerment, and community services in the Dallas-Fort Worth area.",
 };
 
 export default function DonatePage() {
