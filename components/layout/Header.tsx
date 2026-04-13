@@ -1,13 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import { navLinks } from "@/content/navigation";
 import { siteConfig } from "@/content/site";
 import MobileNav from "./MobileNav";
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const closeMobileNav = useCallback(() => setMobileOpen(false), []);
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
@@ -63,7 +64,7 @@ export default function Header() {
       </div>
 
       {/* Mobile nav */}
-      <MobileNav isOpen={mobileOpen} onClose={() => setMobileOpen(false)} />
+      <MobileNav isOpen={mobileOpen} onClose={closeMobileNav} />
     </header>
   );
 }

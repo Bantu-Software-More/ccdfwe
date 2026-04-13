@@ -15,7 +15,7 @@ export default function MobileNav({ isOpen, onClose }: MobileNavProps) {
 
   useEffect(() => {
     onClose();
-  }, [pathname]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [pathname, onClose]);
 
   if (!isOpen) return null;
 
