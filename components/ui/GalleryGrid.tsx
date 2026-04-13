@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
-import type { GalleryImage } from "@/content/gallery";
+import { useState, useCallback, useEffect } from "react";
+import type { GalleryImage } from "@/lib/gallery";
 
 interface GalleryGridProps {
   images: GalleryImage[];
@@ -11,10 +11,36 @@ interface GalleryGridProps {
 
 export default function GalleryGrid({ images, categories }: GalleryGridProps) {
   const [activeCategory, setActiveCategory] = useState("All");
-  const [lightbox, setLightbox] = useState<GalleryImage | null>(null);
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   const filtered =
     activeCategory === "All" ? images : images.filter((img) => img.category === activeCategory);
+
+  const openLightbox = (idx: number) => setLightboxIndex(idx);
+  const closeLightbox = () => setLightboxIndex(null);
+
+  const goNext = useCallback(() => {
+    if (lightboxIndex === null) return;
+    setLightboxIndex((lightboxIndex + 1) % filtered.length);
+  }, [lightboxIndex, filtered.length]);
+
+  const goPrev = useCallback(() => {
+    if (lightboxIndex === null) return;
+    setLightboxIndex((lightboxIndex - 1 + filtered.length) % filtered.length);
+  }, [lightboxIndex, filtered.length]);
+
+  useEffect(() => {
+    if (lightboxIndex === null) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "ArrowRight") goNext();
+      else if (e.key === "ArrowLeft") goPrev();
+      else if (e.key === "Escape") closeLightbox();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [lightboxIndex, goNext, goPrev]);
+
+  const activeLightboxImage = lightboxIndex !== null ? filtered[lightboxIndex] : null;
 
   return (
     <div>
@@ -43,7 +69,7 @@ export default function GalleryGrid({ images, categories }: GalleryGridProps) {
           <button
             key={idx}
             className="relative aspect-square bg-emerald-100 rounded-xl overflow-hidden group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
-            onClick={() => setLightbox(img)}
+            onClick={() => openLightbox(idx)}
             aria-label={`View: ${img.alt}`}
           >
             <Image
@@ -60,36 +86,74 @@ export default function GalleryGrid({ images, categories }: GalleryGridProps) {
       </div>
 
       {/* Lightbox */}
-      {lightbox && (
+      {activeLightboxImage && lightboxIndex !== null && (
         <div
-          className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4"
+          className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
           role="dialog"
           aria-modal="true"
-          aria-label={lightbox.alt}
-          onClick={() => setLightbox(null)}
+          aria-label={activeLightboxImage.alt}
+          onClick={closeLightbox}
         >
-          <div className="relative max-w-3xl w-full" onClick={(e) => e.stopPropagation()}>
-            <div className="relative aspect-video bg-black rounded-xl overflow-hidden">
-              <Image
-                src={lightbox.src}
-                alt={lightbox.alt}
-                fill
-                className="object-contain"
-                sizes="(max-width: 1024px) 100vw, 768px"
-              />
-            </div>
-            {lightbox.caption && (
-              <p className="text-white text-center mt-3 text-sm">{lightbox.caption}</p>
-            )}
+          <div className="relative max-w-5xl w-full" onClick={(e) => e.stopPropagation()}>
+            {/* Close */}
             <button
-              className="absolute -top-4 -right-4 bg-white rounded-full p-2 text-gray-900 hover:bg-gray-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
-              onClick={() => setLightbox(null)}
+              className="absolute -top-4 -right-4 z-10 bg-white rounded-full p-2 text-gray-900 hover:bg-gray-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+              onClick={closeLightbox}
               aria-label="Close lightbox"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
+
+            {/* Image */}
+            <div className="relative aspect-video bg-black rounded-xl overflow-hidden">
+              <Image
+                src={activeLightboxImage.src}
+                alt={activeLightboxImage.alt}
+                fill
+                className="object-contain"
+                sizes="(max-width: 1280px) 100vw, 1024px"
+              />
+            </div>
+
+            {/* Caption and counter */}
+            <div className="flex items-center justify-between mt-3 px-1">
+              {activeLightboxImage.caption ? (
+                <p className="text-white text-sm">{activeLightboxImage.caption}</p>
+              ) : (
+                <span />
+              )}
+              <p className="text-gray-400 text-xs">
+                {lightboxIndex + 1} / {filtered.length}
+              </p>
+            </div>
+
+            {/* Prev button */}
+            {filtered.length > 1 && (
+              <button
+                className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 bg-white/90 hover:bg-white rounded-full p-3 text-gray-900 shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white transition-colors"
+                onClick={goPrev}
+                aria-label="Previous image"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+            )}
+
+            {/* Next button */}
+            {filtered.length > 1 && (
+              <button
+                className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 bg-white/90 hover:bg-white rounded-full p-3 text-gray-900 shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white transition-colors"
+                onClick={goNext}
+                aria-label="Next image"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            )}
           </div>
         </div>
       )}
