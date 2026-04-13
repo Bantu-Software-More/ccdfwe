@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { homeContent } from "@/content/home";
 import { siteConfig } from "@/content/site";
+import { loadGalleryData, getLandingImages } from "@/lib/gallery";
 import SectionTitle from "@/components/ui/SectionTitle";
 import Card from "@/components/ui/Card";
 import CTASection from "@/components/ui/CTASection";
@@ -15,6 +16,8 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   const { hero, intro, presidentMessage, featuredActivities, cta } = homeContent;
+  const galleryData = loadGalleryData();
+  const landingImages = getLandingImages(galleryData);
 
   return (
     <>
@@ -120,12 +123,12 @@ export default function HomePage() {
             <SectionTitle title="Community in Photos" subtitle="A glimpse of our community in action." />
           </AnimateIn>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
-            {[1, 2, 3, 4].map((i) => (
-              <AnimateIn key={i} delay={i * 80}>
+            {landingImages.slice(0, 4).map((img, i) => (
+              <AnimateIn key={img.src} delay={i * 80}>
                 <div className="relative aspect-square bg-emerald-100 rounded-xl overflow-hidden group">
                   <Image
-                    src={`/images/gallery/photo-0${i}.jpg`}
-                    alt={`Community photo ${i}`}
+                    src={img.src}
+                    alt={img.alt}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                     sizes="(max-width: 768px) 50vw, 25vw"
