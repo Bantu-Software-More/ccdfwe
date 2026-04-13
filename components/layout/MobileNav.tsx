@@ -21,7 +21,7 @@ export default function MobileNav({ isOpen, onClose }: MobileNavProps) {
 
   return (
     <nav
-      className="md:hidden bg-white border-t border-gray-100 py-4 px-4"
+      className="md:hidden bg-white border-t border-gray-100 py-4 px-4 animate-slide-down"
       aria-label="Mobile navigation"
     >
       <ul className="flex flex-col gap-1">

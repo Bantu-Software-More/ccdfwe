@@ -9,13 +9,13 @@ interface ActivityCardProps {
 
 export default function ActivityCard({ title, description, image, category }: ActivityCardProps) {
   return (
-    <article className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-      <div className="relative h-48 bg-emerald-100">
+    <article className="group bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+      <div className="relative h-48 bg-emerald-100 overflow-hidden">
         <Image
           src={image}
           alt={title}
           fill
-          className="object-cover"
+          className="object-cover group-hover:scale-105 transition-transform duration-500"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
         {category && (
