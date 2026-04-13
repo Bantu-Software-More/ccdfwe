@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useCallback } from "react";
 import { navLinks } from "@/content/navigation";
 import { siteConfig } from "@/content/site";
@@ -16,7 +17,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 font-bold text-xl text-emerald-700">
-            <span className="text-2xl">🌍</span>
+            <Image src="/logo.webp" alt={`${siteConfig.name} logo`} width={160} height={165} className="h-10 w-auto" />
             <span>{siteConfig.name}</span>
           </Link>
 

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { siteConfig } from "@/content/site";
 import { footerLinks } from "@/content/navigation";
 
@@ -10,7 +11,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link href="/" className="flex items-center gap-2 font-bold text-xl text-white mb-3">
-              <span className="text-2xl">🌍</span>
+              <Image src="/logo.webp" alt={`${siteConfig.name} logo`} width={160} height={165} className="h-10 w-auto" />
               <span>{siteConfig.name}</span>
             </Link>
             <p className="text-sm text-gray-400 leading-relaxed">
