@@ -26,8 +26,8 @@ export default function CTASection({ title, text, buttons, className = "" }: CTA
               href={btn.href}
               className={
                 btn.variant === "secondary"
-                  ? "border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-emerald-700 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
-                  : "bg-white text-emerald-700 px-8 py-3 rounded-full font-semibold hover:bg-emerald-50 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+                  ? "border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-emerald-700 transition-all duration-300 hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white btn-press"
+                  : "bg-white text-emerald-700 px-8 py-3 rounded-full font-semibold hover:bg-emerald-50 hover:scale-105 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white btn-press"
               }
             >
               {btn.label}
