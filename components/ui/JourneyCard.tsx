@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { withBasePath } from "@/lib/basePath";
 
 interface JourneyCardProps {
   title: string;
@@ -85,7 +86,7 @@ export default function JourneyCard({
             <div className="relative w-full h-48 md:h-56 overflow-hidden">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src={image}
+                src={withBasePath(image)}
                 alt={imageAlt || title}
                 className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                 loading="lazy"
