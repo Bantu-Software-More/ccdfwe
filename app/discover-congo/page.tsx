@@ -18,7 +18,11 @@ export default function DiscoverCongoPage() {
 
   return (
     <>
-      <PageHero title={hero.title} subtitle={hero.subtitle} />
+      <PageHero
+        title={hero.title}
+        subtitle={hero.subtitle}
+        bgImage="https://www.profor.info/sites/default/files/2024-05/shutterstock_1234452676%2520%25281%2529.jpg"
+      />
 
       {/* ── Intro ── */}
       <section className="py-20 px-4 bg-white">
