@@ -24,6 +24,7 @@ export const discoverCongoContent = {
       icon: "🌳",
       image: "/images/home/26.jpg",
       imageAlt: "Dense tropical rainforest in the Congo Basin",
+    },
     {
       title: "Brazzaville — The Capital",
       text: "Brazzaville, the capital, sits directly across the Congo River from Kinshasa (DRC), making them the closest pair of capital cities in the world (only 1.6 km apart). Known for its tree-lined boulevards, vibrant music scene, and the famous Sapeurs — sharply-dressed dandies who turn the streets into fashion runways.",
