@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { siteConfig } from "@/content/site";
+import { withBasePath } from "@/lib/basePath";
 
 export const metadata: Metadata = {
   title: {
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
   ],
   metadataBase: new URL(siteConfig.url),
   icons: {
-    icon: "/favicon.ico",
+    icon: withBasePath("/favicon.ico"),
   },
   openGraph: {
     type: "website",

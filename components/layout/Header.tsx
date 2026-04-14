@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useState, useCallback } from "react";
 import { navLinks } from "@/content/navigation";
 import { siteConfig } from "@/content/site";
+import { withBasePath } from "@/lib/basePath";
 import MobileNav from "./MobileNav";
 
 export default function Header() {
@@ -17,7 +18,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 font-bold text-xl text-emerald-700">
-            <Image src="/logo.webp" alt={`${siteConfig.name} logo`} width={160} height={165} className="h-10 w-auto" />
+            <Image src={withBasePath("/logo.webp")} alt={`${siteConfig.name} logo`} width={160} height={165} className="h-10 w-auto" />
             <span>{siteConfig.name}</span>
           </Link>
 

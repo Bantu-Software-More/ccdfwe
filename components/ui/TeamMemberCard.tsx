@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { withBasePath } from "@/lib/basePath";
 
 interface TeamMemberCardProps {
   name: string;
@@ -12,7 +13,7 @@ export default function TeamMemberCard({ name, role, bio, image }: TeamMemberCar
     <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 text-center p-6 hover:shadow-md transition-shadow">
       <div className="relative w-24 h-24 rounded-full overflow-hidden mx-auto mb-4 bg-emerald-100">
         <Image
-          src={image}
+          src={withBasePath(image)}
           alt={`Photo of ${name}`}
           fill
           className="object-cover"
