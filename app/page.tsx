@@ -23,9 +23,14 @@ export default function HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-emerald-900 via-emerald-800 to-emerald-600 text-white overflow-hidden">
+      <section className="relative min-h-screen flex items-center bg-gradient-to-br from-emerald-900 via-emerald-800 to-emerald-600 text-white overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('${withBasePath('/images/home/hero.jpg')}')` }} />
+        </div>
+        {/* Decorative floating shapes */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+          <div className="absolute top-1/4 right-20 w-72 h-72 bg-white/5 rounded-full blur-3xl animate-pulse-soft" />
+          <div className="absolute bottom-1/4 left-10 w-56 h-56 bg-emerald-400/10 rounded-full blur-2xl animate-pulse-soft delay-500" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
           <div className="max-w-2xl">
@@ -50,6 +55,12 @@ export default function HomePage() {
               </Link>
             </div>
           </div>
+        </div>
+        {/* Scroll indicator */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-scroll-hint" aria-hidden="true">
+          <svg className="w-6 h-6 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          </svg>
         </div>
       </section>
 

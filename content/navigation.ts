@@ -6,6 +6,7 @@ export interface NavLink {
 export const navLinks: NavLink[] = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
+  { label: "Discover Congo", href: "/discover-congo" },
   { label: "Activities", href: "/activities" },
   { label: "Gallery", href: "/gallery" },
   { label: "Join Us", href: "/join-us" },
@@ -16,6 +17,7 @@ export const navLinks: NavLink[] = [
 export const footerLinks: NavLink[] = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
+  { label: "Discover Congo", href: "/discover-congo" },
   { label: "Activities", href: "/activities" },
   { label: "Gallery", href: "/gallery" },
   { label: "Join Us", href: "/join-us" },

@@ -60,6 +60,31 @@ html {
   to   { opacity: 1; transform: translateY(0);    }
 }
 
+@keyframes scale-in {
+  from { opacity: 0; transform: scale(0.9); }
+  to   { opacity: 1; transform: scale(1);   }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-10px); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0;  }
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 0.6; }
+  50%      { opacity: 1;   }
+}
+
+@keyframes scroll-hint {
+  0%, 100% { opacity: 0.4; transform: translateY(0); }
+  50%      { opacity: 1;   transform: translateY(8px); }
+}
+
 /* ── Static animation helpers ── */
 
 .animate-fade-in        { animation: fade-in       0.6s ease-out both; }
@@ -67,6 +92,10 @@ html {
 .animate-slide-in-left  { animation: slide-in-left 0.6s ease-out both; }
 .animate-slide-in-right { animation: slide-in-right 0.6s ease-out both; }
 .animate-slide-down     { animation: slide-down    0.3s ease-out both; }
+.animate-scale-in       { animation: scale-in      0.5s ease-out both; }
+.animate-float          { animation: float         3s   ease-in-out infinite; }
+.animate-pulse-soft     { animation: pulse-soft    2s   ease-in-out infinite; }
+.animate-scroll-hint    { animation: scroll-hint   2s   ease-in-out infinite; }
 
 /* ── Hero staggered entrance ── */
 
@@ -97,6 +126,92 @@ html {
   transform: translateY(0);
 }
 
+/* ── Parallax helpers ── */
+
+.parallax-container {
+  perspective: 1px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .parallax-bg {
+    background-attachment: scroll;
+  }
+}
+
+/* ── Journey timeline ── */
+
+.journey-line {
+  position: relative;
+}
+
+.journey-line::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, #059669, #065f46);
+  transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+  .journey-line::before {
+    left: 24px;
+  }
+}
+
+/* ── Journey card slide-in (CSS-only, no setState) ── */
+
+.journey-card .journey-card-inner {
+  opacity: 0;
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.journey-card.journey-from-left .journey-card-inner {
+  transform: translateX(-64px);
+}
+
+.journey-card.journey-from-right .journey-card-inner {
+  transform: translateX(64px);
+}
+
+.journey-card.journey-visible .journey-card-inner {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ── Shimmer effect ── */
+
+.shimmer-text {
+  background: linear-gradient(90deg, #ffffff 0%, #a7f3d0 50%, #ffffff 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 3s linear infinite;
+}
+
+/* ── Card hover lift ── */
+
+.card-hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
 /* ── Button press micro-interaction ── */
 
 .btn-press {
@@ -105,4 +220,30 @@ html {
 
 .btn-press:active {
   transform: scale(0.97);
+}
+
+/* ── Gradient text ── */
+
+.gradient-text {
+  background: linear-gradient(135deg, #059669 0%, #065f46 50%, #047857 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ── Section divider wave ── */
+
+.wave-divider {
+  position: relative;
+}
+
+.wave-divider::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 48px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 48'%3E%3Cpath fill='%23ffffff' d='M0 24C200 48 400 0 600 24S1000 48 1200 24V48H0z'/%3E%3C/svg%3E") no-repeat center bottom;
+  background-size: 100% 100%;
 }
