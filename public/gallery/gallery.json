@@ -2,7 +2,7 @@
   "images": [
     {
       "src": "/gallery/images/0.jpeg",
-      "alt": "Congolese Independence Day celebration venue decorated with DRC flag colors",
+      "alt": "Congolese Independence Day celebration venue decorated with Republic of Congo flag colors",
       "category": "Events",
       "caption": "Independence Day celebration venue setup",
       "showOnLanding": true
@@ -23,9 +23,9 @@
     },
     {
       "src": "/gallery/images/3.jpeg",
-      "alt": "Indoor Congolese Independence Day party with DRC flag decorations",
+      "alt": "Indoor Congolese Independence Day party with Republic of Congo flag decorations",
       "category": "Events",
-      "caption": "Independence Day party with DRC flag decorations",
+      "caption": "Independence Day party with Republic of Congo flag decorations",
       "showOnLanding": true
     },
     {
@@ -37,16 +37,16 @@
     },
     {
       "src": "/gallery/images/5.jpeg",
-      "alt": "DRC flag display at Congolese Independence Day celebration in DFW",
+      "alt": "Republic of Congo flag display at Congolese Independence Day celebration in DFW",
       "category": "Culture",
-      "caption": "Displaying the DRC flag at Independence Day",
+      "caption": "Displaying the Republic of Congo flag at Independence Day",
       "showOnLanding": false
     },
     {
       "src": "/gallery/images/6.jpeg",
-      "alt": "Congolese Independence Day celebration venue with blue DRC-themed decorations",
+      "alt": "Congolese Independence Day celebration venue with blue Republic of Congo-themed decorations",
       "category": "Culture",
-      "caption": "Venue decorated in DRC flag colors",
+      "caption": "Venue decorated in Republic of Congo flag colors",
       "showOnLanding": false
     },
     {
@@ -65,7 +65,7 @@
     },
     {
       "src": "/gallery/images/9.jpeg",
-      "alt": "Congolese Independence Day group photo with DRC flag colors",
+      "alt": "Congolese Independence Day group photo with Republic of Congo flag colors",
       "category": "Events",
       "caption": "Group photo at Independence Day celebration",
       "showOnLanding": false
@@ -79,16 +79,16 @@
     },
     {
       "src": "/gallery/images/11.jpeg",
-      "alt": "Congolese Independence Day indoor celebration with DRC-themed decorations",
+      "alt": "Congolese Independence Day indoor celebration with Republic of Congo-themed decorations",
       "category": "Culture",
-      "caption": "Indoor celebration with DRC decorations",
+      "caption": "Indoor celebration with Republic of Congo decorations",
       "showOnLanding": false
     },
     {
       "src": "/gallery/images/12.jpeg",
-      "alt": "DRC flag proudly displayed at Congolese Independence Day celebration",
+      "alt": "Republic of Congo flag proudly displayed at Congolese Independence Day celebration",
       "category": "Culture",
-      "caption": "DRC flag display at the celebration",
+      "caption": "Republic of Congo flag display at the celebration",
       "showOnLanding": false
     },
     {
@@ -114,9 +114,9 @@
     },
     {
       "src": "/gallery/images/16.jpeg",
-      "alt": "Congolese Independence Day party venue with DRC colors and decorations",
+      "alt": "Congolese Independence Day party venue with Republic of Congo colors and decorations",
       "category": "Culture",
-      "caption": "Party venue decorated in DRC colors",
+      "caption": "Party venue decorated in Republic of Congo colors",
       "showOnLanding": false
     },
     {
@@ -135,7 +135,7 @@
     },
     {
       "src": "/gallery/images/19.jpeg",
-      "alt": "Evening Congolese Independence Day celebration with DRC flag decorations",
+      "alt": "Evening Congolese Independence Day celebration with Republic of Congo flag decorations",
       "category": "Culture",
       "caption": "Evening Independence Day celebration",
       "showOnLanding": false
@@ -163,16 +163,16 @@
     },
     {
       "src": "/gallery/images/23.jpeg",
-      "alt": "DRC flag-themed decorations at Congolese Independence Day celebration",
+      "alt": "Republic of Congo flag-themed decorations at Congolese Independence Day celebration",
       "category": "Culture",
-      "caption": "DRC flag-themed decorations",
+      "caption": "Republic of Congo flag-themed decorations",
       "showOnLanding": false
     },
     {
       "src": "/gallery/images/24.jpeg",
-      "alt": "Blue DRC-themed decorations at Congolese Independence Day celebration",
+      "alt": "Blue Republic of Congo-themed decorations at Congolese Independence Day celebration",
       "category": "Culture",
-      "caption": "DRC-themed blue decorations at the celebration",
+      "caption": "Republic of Congo-themed blue decorations at the celebration",
       "showOnLanding": false
     }
   ]
