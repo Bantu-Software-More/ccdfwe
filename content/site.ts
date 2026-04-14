@@ -1,12 +1,12 @@
 export const siteConfig = {
   name: "CCDFWE",
-  fullName: "Community and Cultural Development Foundation for Women's Empowerment",
-  tagline: "Building Stronger Communities Together",
-  description: "CCDFWE is a non-profit organization dedicated to community development, cultural preservation, and women's empowerment.",
+  fullName: "Communauté Congolaise de Dallas Fort Worth et Environs",
+  tagline: "Uniting the Congolese Community in Dallas-Fort Worth",
+  description: "CCDFWE (Communauté Congolaise de Dallas Fort Worth et Environs) is a non-profit organization uniting the Congolese diaspora in the Dallas-Fort Worth metroplex through cultural preservation, community development, and women's empowerment.",
   url: "https://bantu-software-more.github.io/ccdfwe",
   email: "info@ccdfwe.org",
   phone: "+1 (000) 000-0000",
-  address: "Community Center, Your City, Your Country",
+  address: "Dallas-Fort Worth Metroplex, Texas, USA",
   social: {
     facebook: "https://facebook.com/ccdfwe",
     twitter: "https://twitter.com/ccdfwe",

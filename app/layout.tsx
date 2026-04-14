@@ -10,7 +10,23 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
-  keywords: ["community", "development", "women empowerment", "cultural", "CCDFWE"],
+  keywords: [
+    "CCDFWE",
+    "Congolese community",
+    "Dallas Fort Worth",
+    "DFW",
+    "Congolese diaspora",
+    "Communauté Congolaise",
+    "Congolese association Texas",
+    "African community DFW",
+    "Congolese cultural heritage",
+    "women empowerment",
+    "community development",
+    "cultural preservation",
+    "Congo",
+    "DR Congo",
+    "North Texas",
+  ],
   metadataBase: new URL(siteConfig.url),
   icons: {
     icon: "/favicon.ico",
@@ -20,17 +36,29 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: siteConfig.name,
+    title: `${siteConfig.name} – ${siteConfig.fullName}`,
     description: siteConfig.description,
+    images: [
+      {
+        url: "/images/home/hero.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CCDFWE – Congolese Community of Dallas Fort Worth and Surroundings",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: siteConfig.name,
+    title: `${siteConfig.name} – ${siteConfig.fullName}`,
     description: siteConfig.description,
+    images: ["/images/home/hero.jpg"],
   },
   robots: {
     index: true,
     follow: true,
+  },
+  alternates: {
+    canonical: siteConfig.url,
   },
 };
 

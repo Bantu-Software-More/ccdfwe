@@ -5,8 +5,8 @@ import SectionTitle from "@/components/ui/SectionTitle";
 import TeamMemberCard from "@/components/ui/TeamMemberCard";
 
 export const metadata: Metadata = {
-  title: "About Us",
-  description: "Learn about CCDFWE's mission, vision, goals, and the team behind the work.",
+  title: "About Us – Congolese Community of Dallas-Fort Worth",
+  description: "Learn about CCDFWE, the Congolese Community of Dallas Fort Worth and Surroundings — our mission, vision, goals, and the team preserving Congolese heritage in DFW.",
 };
 
 export default function AboutPage() {

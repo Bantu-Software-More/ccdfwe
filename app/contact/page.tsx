@@ -5,8 +5,8 @@ import PageHero from "@/components/ui/PageHero";
 import ContactForm from "@/components/ui/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact Us",
-  description: "Get in touch with CCDFWE. We would love to hear from you.",
+  title: "Contact Us – Reach the Congolese Community of DFW",
+  description: "Get in touch with CCDFWE, the Congolese Community of Dallas Fort Worth and Surroundings. We would love to hear from you.",
 };
 
 export default function ContactPage() {

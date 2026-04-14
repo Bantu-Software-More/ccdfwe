@@ -11,7 +11,7 @@ import AnimateIn from "@/components/ui/AnimateIn";
 
 export const metadata: Metadata = {
   title: `${siteConfig.name} – ${siteConfig.tagline}`,
-  description: siteConfig.description,
+  description: `${siteConfig.description} Serving the Congolese diaspora in Dallas, Fort Worth, Arlington, Irving, Plano, and surrounding North Texas communities.`,
 };
 
 export default function HomePage() {

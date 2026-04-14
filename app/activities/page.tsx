@@ -5,8 +5,8 @@ import SectionTitle from "@/components/ui/SectionTitle";
 import ActivityCard from "@/components/ui/ActivityCard";
 
 export const metadata: Metadata = {
-  title: "Activities",
-  description: "Explore the community activities, events, and programs run by CCDFWE.",
+  title: "Activities – Congolese Cultural Events & Programs in DFW",
+  description: "Explore Congolese cultural celebrations, women's empowerment workshops, youth mentorship, and community programs run by CCDFWE in Dallas-Fort Worth.",
 };
 
 export default function ActivitiesPage() {

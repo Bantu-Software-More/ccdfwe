@@ -6,8 +6,8 @@ import Card from "@/components/ui/Card";
 import CTASection from "@/components/ui/CTASection";
 
 export const metadata: Metadata = {
-  title: "Join Us",
-  description: "Become a member of CCDFWE and help us build stronger communities.",
+  title: "Join Us – Become a Member of the Congolese Community in DFW",
+  description: "Join CCDFWE and become part of the Congolese community in Dallas-Fort Worth. Help preserve our heritage, empower families, and build a stronger diaspora.",
 };
 
 export default function JoinUsPage() {
