@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   description: siteConfig.description,
   keywords: ["community", "development", "women empowerment", "cultural", "CCDFWE"],
   metadataBase: new URL(siteConfig.url),
+  icons: {
+    icon: "/favicon.ico",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",

@@ -1,87 +1,178 @@
 {
   "images": [
     {
-      "src": "/images/gallery/photo-01.jpg",
+      "src": "/gallery/images/0.jpeg",
       "alt": "Community gathering",
       "category": "Events",
-      "caption": "Community gathering 2024",
+      "caption": "Community gathering event",
       "showOnLanding": true
     },
     {
-      "src": "/images/gallery/photo-02.jpg",
-      "alt": "Women's workshop",
+      "src": "/gallery/images/1.jpeg",
+      "alt": "Women's empowerment workshop",
       "category": "Empowerment",
       "caption": "Women's empowerment workshop",
       "showOnLanding": true
     },
     {
-      "src": "/images/gallery/photo-03.jpg",
-      "alt": "Youth program",
+      "src": "/gallery/images/2.jpeg",
+      "alt": "Youth mentorship session",
       "category": "Youth",
       "caption": "Youth mentorship session",
       "showOnLanding": true
     },
     {
-      "src": "/images/gallery/photo-04.jpg",
+      "src": "/gallery/images/3.jpeg",
       "alt": "Cultural celebration",
       "category": "Culture",
       "caption": "Annual cultural celebration",
       "showOnLanding": true
     },
     {
-      "src": "/images/gallery/photo-05.jpg",
+      "src": "/gallery/images/4.jpeg",
       "alt": "Community volunteers",
       "category": "Community",
-      "caption": "Community clean-up day",
+      "caption": "Community volunteer day",
       "showOnLanding": false
     },
     {
-      "src": "/images/gallery/photo-06.jpg",
+      "src": "/gallery/images/5.jpeg",
       "alt": "Educational seminar",
       "category": "Education",
       "caption": "Community education seminar",
       "showOnLanding": false
     },
     {
-      "src": "/images/gallery/photo-07.jpg",
+      "src": "/gallery/images/6.jpeg",
       "alt": "Family support event",
       "category": "Support",
       "caption": "Family support initiative",
       "showOnLanding": false
     },
     {
-      "src": "/images/gallery/photo-08.jpg",
+      "src": "/gallery/images/7.jpeg",
       "alt": "Leadership meeting",
       "category": "Events",
       "caption": "Annual leadership meeting",
       "showOnLanding": false
     },
     {
-      "src": "/images/gallery/photo-09.jpg",
-      "alt": "Community lunch",
+      "src": "/gallery/images/8.jpeg",
+      "alt": "Cultural dance performance",
       "category": "Culture",
+      "caption": "Cultural dance performance",
+      "showOnLanding": false
+    },
+    {
+      "src": "/gallery/images/9.jpeg",
+      "alt": "Youth program activities",
+      "category": "Youth",
+      "caption": "Youth program activities",
+      "showOnLanding": false
+    },
+    {
+      "src": "/gallery/images/10.jpeg",
+      "alt": "Women leadership session",
+      "category": "Empowerment",
+      "caption": "Women leadership session",
+      "showOnLanding": false
+    },
+    {
+      "src": "/gallery/images/11.jpeg",
+      "alt": "Community clean-up",
+      "category": "Community",
+      "caption": "Community clean-up initiative",
+      "showOnLanding": false
+    },
+    {
+      "src": "/gallery/images/12.jpeg",
+      "alt": "Charity fundraising event",
+      "category": "Events",
+      "caption": "Charity fundraising event",
+      "showOnLanding": false
+    },
+    {
+      "src": "/gallery/images/13.jpeg",
+      "alt": "Skills training workshop",
+      "category": "Education",
+      "caption": "Skills training workshop",
+      "showOnLanding": false
+    },
+    {
+      "src": "/gallery/images/14.jpeg",
+      "alt": "Children education program",
+      "category": "Youth",
+      "caption": "Children education program",
+      "showOnLanding": false
+    },
+    {
+      "src": "/gallery/images/15.jpeg",
+      "alt": "Community health outreach",
+      "category": "Support",
+      "caption": "Community health outreach",
+      "showOnLanding": false
+    },
+    {
+      "src": "/gallery/images/16.jpeg",
+      "alt": "Cultural heritage display",
+      "category": "Culture",
+      "caption": "Cultural heritage display",
+      "showOnLanding": false
+    },
+    {
+      "src": "/gallery/images/17.jpeg",
+      "alt": "Award ceremony",
+      "category": "Events",
+      "caption": "Community recognition ceremony",
+      "showOnLanding": false
+    },
+    {
+      "src": "/gallery/images/18.jpeg",
+      "alt": "Mentorship program",
+      "category": "Empowerment",
+      "caption": "Mentorship program session",
+      "showOnLanding": false
+    },
+    {
+      "src": "/gallery/images/19.jpeg",
+      "alt": "Community lunch gathering",
+      "category": "Community",
       "caption": "Community sharing lunch",
       "showOnLanding": false
     },
     {
-      "src": "/images/gallery/photo-10.jpg",
-      "alt": "Volunteer group",
-      "category": "Community",
-      "caption": "Our wonderful volunteers",
+      "src": "/gallery/images/20.jpeg",
+      "alt": "Vocational training",
+      "category": "Education",
+      "caption": "Vocational training session",
       "showOnLanding": false
     },
     {
-      "src": "/images/gallery/photo-11.jpg",
-      "alt": "Children program",
+      "src": "/gallery/images/21.jpeg",
+      "alt": "Youth sports day",
       "category": "Youth",
-      "caption": "Children's educational program",
+      "caption": "Youth sports and recreation day",
       "showOnLanding": false
     },
     {
-      "src": "/images/gallery/photo-12.jpg",
-      "alt": "Award ceremony",
+      "src": "/gallery/images/22.jpeg",
+      "alt": "Women advocacy march",
+      "category": "Empowerment",
+      "caption": "Women advocacy march",
+      "showOnLanding": false
+    },
+    {
+      "src": "/gallery/images/23.jpeg",
+      "alt": "Cultural festival",
+      "category": "Culture",
+      "caption": "Annual cultural festival",
+      "showOnLanding": false
+    },
+    {
+      "src": "/gallery/images/24.jpeg",
+      "alt": "Community meeting",
       "category": "Events",
-      "caption": "Community recognition ceremony",
+      "caption": "Town hall community meeting",
       "showOnLanding": false
     }
   ]
