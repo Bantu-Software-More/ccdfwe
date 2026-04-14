@@ -2,177 +2,177 @@
   "images": [
     {
       "src": "/gallery/images/0.jpeg",
-      "alt": "Community gathering",
+      "alt": "Congolese Independence Day celebration venue decorated with Republic of Congo flag colors",
       "category": "Events",
-      "caption": "Community gathering event",
+      "caption": "Independence Day celebration venue setup",
       "showOnLanding": true
     },
     {
       "src": "/gallery/images/1.jpeg",
-      "alt": "Women's empowerment workshop",
-      "category": "Empowerment",
-      "caption": "Women's empowerment workshop",
+      "alt": "Group photo of Congolese community members at Independence Day celebration",
+      "category": "Events",
+      "caption": "Community members gathered for Independence Day",
       "showOnLanding": true
     },
     {
       "src": "/gallery/images/2.jpeg",
-      "alt": "Youth mentorship session",
-      "category": "Youth",
-      "caption": "Youth mentorship session",
+      "alt": "Congolese community member dressed up for Independence Day celebration",
+      "category": "Culture",
+      "caption": "Celebrating Congolese Independence Day in style",
       "showOnLanding": true
     },
     {
       "src": "/gallery/images/3.jpeg",
-      "alt": "Cultural celebration",
-      "category": "Culture",
-      "caption": "Annual cultural celebration",
+      "alt": "Indoor Congolese Independence Day party with Republic of Congo flag decorations",
+      "category": "Events",
+      "caption": "Independence Day party with Republic of Congo flag decorations",
       "showOnLanding": true
     },
     {
       "src": "/gallery/images/4.jpeg",
-      "alt": "Community volunteers",
+      "alt": "Congolese community member posing at Independence Day celebration",
       "category": "Community",
-      "caption": "Community volunteer day",
+      "caption": "Community member at the Independence Day celebration",
       "showOnLanding": false
     },
     {
       "src": "/gallery/images/5.jpeg",
-      "alt": "Educational seminar",
-      "category": "Education",
-      "caption": "Community education seminar",
+      "alt": "Republic of Congo flag display at Congolese Independence Day celebration in DFW",
+      "category": "Culture",
+      "caption": "Displaying the Republic of Congo flag at Independence Day",
       "showOnLanding": false
     },
     {
       "src": "/gallery/images/6.jpeg",
-      "alt": "Family support event",
-      "category": "Support",
-      "caption": "Family support initiative",
+      "alt": "Congolese Independence Day celebration venue with blue Republic of Congo-themed decorations",
+      "category": "Culture",
+      "caption": "Venue decorated in Republic of Congo flag colors",
       "showOnLanding": false
     },
     {
       "src": "/gallery/images/7.jpeg",
-      "alt": "Leadership meeting",
+      "alt": "Stage presentation at Congolese Independence Day celebration",
       "category": "Events",
-      "caption": "Annual leadership meeting",
+      "caption": "Stage presentation during Independence Day celebration",
       "showOnLanding": false
     },
     {
       "src": "/gallery/images/8.jpeg",
-      "alt": "Cultural dance performance",
-      "category": "Culture",
-      "caption": "Cultural dance performance",
+      "alt": "Congolese community gathering at Independence Day celebration in DFW",
+      "category": "Events",
+      "caption": "Community gathering at Independence Day celebration",
       "showOnLanding": false
     },
     {
       "src": "/gallery/images/9.jpeg",
-      "alt": "Youth program activities",
-      "category": "Youth",
-      "caption": "Youth program activities",
+      "alt": "Congolese Independence Day group photo with Republic of Congo flag colors",
+      "category": "Events",
+      "caption": "Group photo at Independence Day celebration",
       "showOnLanding": false
     },
     {
       "src": "/gallery/images/10.jpeg",
-      "alt": "Women leadership session",
-      "category": "Empowerment",
-      "caption": "Women leadership session",
+      "alt": "Portrait of Congolese community member at Independence Day party",
+      "category": "Community",
+      "caption": "Community member at the celebration",
       "showOnLanding": false
     },
     {
       "src": "/gallery/images/11.jpeg",
-      "alt": "Community clean-up",
-      "category": "Community",
-      "caption": "Community clean-up initiative",
+      "alt": "Congolese Independence Day indoor celebration with Republic of Congo-themed decorations",
+      "category": "Culture",
+      "caption": "Indoor celebration with Republic of Congo decorations",
       "showOnLanding": false
     },
     {
       "src": "/gallery/images/12.jpeg",
-      "alt": "Charity fundraising event",
-      "category": "Events",
-      "caption": "Charity fundraising event",
+      "alt": "Republic of Congo flag proudly displayed at Congolese Independence Day celebration",
+      "category": "Culture",
+      "caption": "Republic of Congo flag display at the celebration",
       "showOnLanding": false
     },
     {
       "src": "/gallery/images/13.jpeg",
-      "alt": "Skills training workshop",
-      "category": "Education",
-      "caption": "Skills training workshop",
+      "alt": "Scene from the Congolese Independence Day celebration in Dallas-Fort Worth",
+      "category": "Events",
+      "caption": "Independence Day celebration in DFW",
       "showOnLanding": false
     },
     {
       "src": "/gallery/images/14.jpeg",
-      "alt": "Children education program",
-      "category": "Youth",
-      "caption": "Children education program",
+      "alt": "Congolese community members posing together at Independence Day gathering",
+      "category": "Community",
+      "caption": "Community members at the gathering",
       "showOnLanding": false
     },
     {
       "src": "/gallery/images/15.jpeg",
-      "alt": "Community health outreach",
-      "category": "Support",
-      "caption": "Community health outreach",
+      "alt": "Congolese Independence Day celebration event in the DFW area",
+      "category": "Events",
+      "caption": "Independence Day celebration event",
       "showOnLanding": false
     },
     {
       "src": "/gallery/images/16.jpeg",
-      "alt": "Cultural heritage display",
+      "alt": "Congolese Independence Day party venue with Republic of Congo colors and decorations",
       "category": "Culture",
-      "caption": "Cultural heritage display",
+      "caption": "Party venue decorated in Republic of Congo colors",
       "showOnLanding": false
     },
     {
       "src": "/gallery/images/17.jpeg",
-      "alt": "Award ceremony",
-      "category": "Events",
-      "caption": "Community recognition ceremony",
+      "alt": "Congolese community members at Independence Day celebration with blue backdrop",
+      "category": "Community",
+      "caption": "Community members at the Independence Day celebration",
       "showOnLanding": false
     },
     {
       "src": "/gallery/images/18.jpeg",
-      "alt": "Mentorship program",
-      "category": "Empowerment",
-      "caption": "Mentorship program session",
+      "alt": "Congolese community members enjoying the Independence Day party",
+      "category": "Events",
+      "caption": "Enjoying the Independence Day party",
       "showOnLanding": false
     },
     {
       "src": "/gallery/images/19.jpeg",
-      "alt": "Community lunch gathering",
-      "category": "Community",
-      "caption": "Community sharing lunch",
+      "alt": "Evening Congolese Independence Day celebration with Republic of Congo flag decorations",
+      "category": "Culture",
+      "caption": "Evening Independence Day celebration",
       "showOnLanding": false
     },
     {
       "src": "/gallery/images/20.jpeg",
-      "alt": "Vocational training",
-      "category": "Education",
-      "caption": "Vocational training session",
+      "alt": "Group of Congolese community members at Independence Day celebration",
+      "category": "Events",
+      "caption": "Group photo at the celebration",
       "showOnLanding": false
     },
     {
       "src": "/gallery/images/21.jpeg",
-      "alt": "Youth sports day",
-      "category": "Youth",
-      "caption": "Youth sports and recreation day",
+      "alt": "Performance on stage at Congolese Independence Day celebration",
+      "category": "Culture",
+      "caption": "Stage performance at Independence Day celebration",
       "showOnLanding": false
     },
     {
       "src": "/gallery/images/22.jpeg",
-      "alt": "Women advocacy march",
-      "category": "Empowerment",
-      "caption": "Women advocacy march",
+      "alt": "Congolese community members gathered at Independence Day event",
+      "category": "Community",
+      "caption": "Community members at the event",
       "showOnLanding": false
     },
     {
       "src": "/gallery/images/23.jpeg",
-      "alt": "Cultural festival",
+      "alt": "Republic of Congo flag-themed decorations at Congolese Independence Day celebration",
       "category": "Culture",
-      "caption": "Annual cultural festival",
+      "caption": "Republic of Congo flag-themed decorations",
       "showOnLanding": false
     },
     {
       "src": "/gallery/images/24.jpeg",
-      "alt": "Community meeting",
-      "category": "Events",
-      "caption": "Town hall community meeting",
+      "alt": "Blue Republic of Congo-themed decorations at Congolese Independence Day celebration",
+      "category": "Culture",
+      "caption": "Republic of Congo-themed blue decorations at the celebration",
       "showOnLanding": false
     }
   ]

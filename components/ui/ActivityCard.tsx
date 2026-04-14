@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { withBasePath } from "@/lib/basePath";
 
 interface ActivityCardProps {
   title: string;
@@ -12,7 +13,7 @@ export default function ActivityCard({ title, description, image, category }: Ac
     <article className="group bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
       <div className="relative h-48 bg-emerald-100 overflow-hidden">
         <Image
-          src={image}
+          src={withBasePath(image)}
           alt={title}
           fill
           className="object-cover group-hover:scale-105 transition-transform duration-500"

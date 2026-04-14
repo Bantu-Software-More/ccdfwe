@@ -4,6 +4,7 @@ import Image from "next/image";
 import { homeContent } from "@/content/home";
 import { siteConfig } from "@/content/site";
 import { loadGalleryData, getLandingImages } from "@/lib/gallery";
+import { withBasePath } from "@/lib/basePath";
 import SectionTitle from "@/components/ui/SectionTitle";
 import Card from "@/components/ui/Card";
 import CTASection from "@/components/ui/CTASection";
@@ -24,7 +25,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-emerald-900 via-emerald-800 to-emerald-600 text-white overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0 bg-[url('/images/home/hero.jpg')] bg-cover bg-center" />
+          <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('${withBasePath('/images/home/hero.jpg')}')` }} />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
           <div className="max-w-2xl">
@@ -66,7 +67,7 @@ export default function HomePage() {
           <div className="flex flex-col md:flex-row items-center gap-10">
             <div className="relative w-40 h-40 rounded-full overflow-hidden flex-shrink-0 bg-emerald-200">
               <Image
-                src={presidentMessage.image}
+                src={withBasePath(presidentMessage.image)}
                 alt="CCDFWE President"
                 fill
                 className="object-cover"

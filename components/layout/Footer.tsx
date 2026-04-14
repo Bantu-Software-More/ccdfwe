@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { siteConfig } from "@/content/site";
 import { footerLinks } from "@/content/navigation";
+import { withBasePath } from "@/lib/basePath";
 
 export default function Footer() {
   return (
@@ -11,7 +12,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link href="/" className="flex items-center gap-2 font-bold text-xl text-white mb-3">
-              <Image src="/logo.webp" alt={`${siteConfig.name} logo`} width={160} height={165} className="h-10 w-auto" />
+              <Image src={withBasePath("/logo.webp")} alt={`${siteConfig.name} logo`} width={160} height={165} className="h-10 w-auto" />
               <span>{siteConfig.name}</span>
             </Link>
             <p className="text-sm text-gray-400 leading-relaxed">

@@ -1,5 +1,6 @@
 import { readFileSync } from "fs";
 import path from "path";
+import { withBasePath } from "./basePath";
 
 export interface GalleryImage {
   src: string;
@@ -22,7 +23,12 @@ export function loadGalleryData(): GalleryData {
     throw new Error(`Gallery data file not found at: ${filePath}`);
   }
   try {
-    return JSON.parse(raw) as GalleryData;
+    const data = JSON.parse(raw) as GalleryData;
+    data.images = data.images.map((img) => ({
+      ...img,
+      src: withBasePath(img.src),
+    }));
+    return data;
   } catch {
     throw new Error(`Invalid JSON in gallery data file: ${filePath}`);
   }
