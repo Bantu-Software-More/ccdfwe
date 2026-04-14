@@ -18,7 +18,11 @@ export default function DiscoverCongoPage() {
 
   return (
     <>
-      <PageHero title={hero.title} subtitle={hero.subtitle} />
+      <PageHero
+        title={hero.title}
+        subtitle={hero.subtitle}
+        bgImage={hero.bgImage}
+      />
 
       {/* ── Intro ── */}
       <section className="py-20 px-4 bg-white">

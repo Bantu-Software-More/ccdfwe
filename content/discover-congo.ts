@@ -3,6 +3,8 @@ export const discoverCongoContent = {
     title: "Discover the Republic of Congo",
     subtitle:
       "Explore the heart of Central Africa — a land of lush rainforests, mighty rivers, vibrant cultures, and breathtaking World Heritage Sites.",
+    bgImage:
+      "https://www.profor.info/sites/default/files/2024-05/shutterstock_1234452676%2520%25281%2529.jpg",
   },
   intro: {
     title: "A Journey Through Congo",
