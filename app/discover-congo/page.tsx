@@ -21,7 +21,7 @@ export default function DiscoverCongoPage() {
       <PageHero
         title={hero.title}
         subtitle={hero.subtitle}
-        bgImage="https://www.profor.info/sites/default/files/2024-05/shutterstock_1234452676%2520%25281%2529.jpg"
+        bgImage={hero.bgImage}
       />
 
       {/* ── Intro ── */}
