@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { siteConfig } from "@/content/site";
 
 export const dynamic = "force-static";
 
@@ -8,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://bantu-software-more.github.io/ccdfwe/sitemap.xml",
+    sitemap: `${siteConfig.url}/sitemap.xml`,
   };
 }
