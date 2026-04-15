@@ -12,8 +12,8 @@ export const homeContent = {
   },
   presidentMessage: {
     title: "A Message From Our President",
-    message: "On behalf of the Communauté Congolaise de Dallas Fort Worth et Environs, I welcome you. Whether you are a longtime member of the DFW Congolese community or newly arrived, our doors are open. Together, we celebrate our heritage, strengthen our families, and build bridges between our Congolese traditions and our American home.",
-    name: "President, CCDFWE",
+    message: "La vie est le bien le plus précieux de l'homme, et elle est d'autant plus belle et plus riche lorsque nous avons la possibilité d'échanger avec autrui et de nous appuyer sur un support system sur lequel nous pouvons compter. Loin de notre pays et de nos familles biologiques pour certains, notre communauté représente justement ce soutien dont nous avons tous besoin.",
+    name: "Esperance Banguid, President",
     image: "/images/team/president.jpg",
   },
   featuredActivities: {
