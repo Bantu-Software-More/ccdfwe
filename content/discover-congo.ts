@@ -67,7 +67,7 @@ export const discoverCongoContent = {
         "Unique Ba'Aka (Bayaka) pygmy indigenous communities with ancestral knowledge of the forest",
         "Exceptional biodiversity — over 1,000 plant species identified",
       ],
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Nouabal%C3%A9-Ndoki_National_Park.jpg/1280px-Nouabal%C3%A9-Ndoki_National_Park.jpg",
+      image: "/images/home/25.jpg",
       imageAlt: "Dense rainforest canopy in the Sangha Trinational World Heritage Site",
     },
     {
@@ -82,7 +82,7 @@ export const discoverCongoContent = {
         "Over 440 bird species recorded",
         "Important carbon sink fighting climate change",
       ],
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Rainforest_in_Odzala-Kokoua_National_Park.jpg/1280px-Rainforest_in_Odzala-Kokoua_National_Park.jpg",
+      image: "/images/home/26.jpg",
       imageAlt: "Pristine rainforest within Odzala-Kokoua National Park",
     },
     {
@@ -97,7 +97,7 @@ export const discoverCongoContent = {
         "Community-based conservation model",
         "Only 140 km from Brazzaville — one of the most accessible gorilla experiences",
       ],
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Lesio-Louna_Gorilla_Reserve_Congo.jpg/1280px-Lesio-Louna_Gorilla_Reserve_Congo.jpg",
+      image: "/images/home/27.jpg",
       imageAlt: "Gorillas in the Lesio-Louna nature reserve",
     },
   ],
