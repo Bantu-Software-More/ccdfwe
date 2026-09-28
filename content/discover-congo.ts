@@ -67,7 +67,8 @@ export const discoverCongoContent = {
         "Unique Ba'Aka (Bayaka) pygmy indigenous communities with ancestral knowledge of the forest",
         "Exceptional biodiversity — over 1,000 plant species identified",
       ],
-      image: "/images/home/25.jpg",
+      image:
+        "https://whc.unesco.org/uploads/thumbs/site_1380_0004-750-750-20231020133329.webp",
       imageAlt: "Dense rainforest canopy in the Sangha Trinational World Heritage Site",
     },
     {
@@ -82,7 +83,8 @@ export const discoverCongoContent = {
         "Over 440 bird species recorded",
         "Important carbon sink fighting climate change",
       ],
-      image: "/images/home/26.jpg",
+      image:
+        "https://visitodzala-kokoua.org/wp-content/uploads/sites/7/2024/05/KAMBA-Odzala-Lango-Lodge-image_-Scott-Ramsey.jpg",
       imageAlt: "Pristine rainforest within Odzala-Kokoua National Park",
     },
     {
@@ -97,7 +99,8 @@ export const discoverCongoContent = {
         "Community-based conservation model",
         "Only 140 km from Brazzaville — one of the most accessible gorilla experiences",
       ],
-      image: "/images/home/27.jpg",
+      image:
+        "https://iucn.org/sites/default/files/content/images/2021/lac_bleu_-_a_place_of_legends.jpg",
       imageAlt: "Gorillas in the Lesio-Louna nature reserve",
     },
   ],
